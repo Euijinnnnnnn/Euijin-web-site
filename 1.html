@@ -1,0 +1,121 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+<style type="text/css">       
+                
+    body{
+        margin:0;
+    }
+    
+    .header{
+    grid-area: header;
+    }
+
+    .section1{
+    grid-area: section1;
+    background: linear-gradient(
+    to right, 
+    #ffffff 0%, 
+    #ffffff 60%, 
+    #FFFAFA 60%, 
+    #FFFAFA 100%
+    );
+    }
+
+    .section2{
+    grid-area: section2;
+    background: linear-gradient(to bottom,
+    #FFFAFA 0%, 
+    #FFFAFA 50%,
+    #ffffff 50%, 
+    #ffffff 100%
+    );
+    }
+
+    .section3{
+    grid-area: section3;
+    background: #FFFAFA;
+    }
+
+    .section4{
+    grid-area: section4;
+    background-image: url("https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80");
+    background-size: cover;
+    filter: grayscale(100%);
+    opacity: 0.8;
+    }
+
+    .footer{
+    grid-area: footer;
+    }
+
+    .container{
+    display: inline-grid;
+    width: 1000px;
+    grid-template-rows: 2fr 2fr 4fr 3fr 3fr 3fr;
+    grid-template-columns: 100%;
+    grid-template-areas:
+    "header"
+    "section1"
+    "section2"
+    "section3"
+    "section4"
+    "footer"
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+    .top-left h3{
+    z-index: 100;
+    position: absolute;
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    left: 0;
+    bottom: 0;
+    margin:0
+    }
+
+</style>
+
+</style>
+
+
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="https://media-exp1.licdn.com/dms/image/C4D1BAQGSOZ5W5YOCLA/company-background_10000/0/1557759979809?e=2159024400&v=beta&t=FI6k4WzUHjPI4znBpI9ussqd2DY_vATl2UM4M1HNiUI"
+            height= 500 width= 1000>
+            <div class="top-left">
+            AI TECH PLAY
+            </div>
+        </div>
+        <div class="section1">
+            <div style="font-weight: bolder; font-size: large; ">ABOUT US<br></div>
+            
+            방관할 수 없었던 MIT와 서울대 학생들, 발 벗고 나서다.<br>
+            왜 꼭 돈이 있어야만 AI 교육을 받을 수 있는 것인가. 
+            세계 1위의 공과대학 MIT가 개발한 최고 양질의 AI 교육안을 세계적인 AI 교육 테크회사 KAIT 및 서울대학교 공과대학이 협력하여 대한민국에 세계 최초로 들여오다.
+
+            
+        </div>
+        <div class="section2">
+            <div>OUR SOLUTIONS</div>
+        </div>
+        <div class="section3">     
+            <div>OUR TEAM</div>
+        </div>
+        <div class="section4">
+            <div>OVERVIEW</div>
+        </div>
+        <div class="footer">
+            <div>REGISTRATION</div>
+        </div>
+    </div>
+</body>
+</html>
