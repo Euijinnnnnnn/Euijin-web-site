@@ -9,7 +9,7 @@
     <div class="container">
         <div class="header">
             <div class="logo">
-                <a href="/"></a>    
+                <a href="/"><img src="Sample Logo.png"></a>    
             </div>
             <div class="menu">
                <ul>
@@ -33,10 +33,10 @@
                 <h2>WHAT WE DO</h2>
             </div>
             <div class="main">
-                <box>
-                    <div class="circle"><span><img src="프로그램 일러.png"></span></div>
-                    <div class="sa"><img src="프로그램 일러 hover.png"></div>
-                </box>
+                <div class="circle">
+                    <span><img src="프로그램 일러.png"></span>
+                    <div class="sa"><img src="프로그램 일러 hover.png"></img></div>
+                </div>
                 <div class="explain">
                     <div><img src="program.png"></div>
                     <h3>인공지능 경진대회</h3>
@@ -53,10 +53,10 @@
                 <h2>WHAT WE DO</h2>
             </div>
             <div class="main">
-                <box>
-                    <div class="circle"><span><img src="책 일러.png"></span></div>
+                <div class="circle">
+                    <span><img src="책 일러.png"></span>
                     <div class="sa"><img src="책 일러 hover.png"></div>
-                </box>
+                </div>
                 <div class="explain">
                     <div><img src="book.png" style="width: 165px;"></div>
                     <h3>OUTTA에서만 볼 수 있는 책</h3>
@@ -73,10 +73,10 @@
                 <h2>WHAT WE DO</h2>
             </div>
             <div class="main">
-                <box>
-                    <div class="circle"><span><img src="자료실 일러.png"></span></div>
+                <div class="circle">
+                    <span><img src="자료실 일러.png"></span>
                     <div class="sa"><img src="자료실 일러 hover.png"></div>
-                </box>
+                </div>
                 <div class="explain">
                     <div><img src="Resource.png"></div>
                     <h3>OUTTA에서만 볼 수 있는 자료실</h3>
@@ -101,6 +101,9 @@
                         Seoul National University, 599 Gwan-angno, Gwanak-gu, Seoul, 151-742, Korea
                     </div>
                 </div>
+                <div class="logo">
+                    <img src="Sample Logo.png">
+                </div>
                 <div class="right">
                     <ul>
                         <li>BLOG</li>
@@ -121,7 +124,9 @@
         for (const element of saElementList) {
             if (!element.classList.contains('show')) {
             if (window.innerHeight > element.getBoundingClientRect().top + saTriggerMargin) {
-                element.classList.add('show');
+                element.classList.add('show')}, function(){  
+                $(".computon").fadeOut(200)
+                $('.comput').fadeIn(200);
             }
             }
         }
